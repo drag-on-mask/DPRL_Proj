@@ -1,0 +1,82 @@
+INFO] Hyperparameters for behavior name CombatBot:
+        trainer_type:   ppo
+        hyperparameters:
+          batch_size:   1024
+          buffer_size:  10240
+          learning_rate:        0.0003
+          beta: 0.0005
+          epsilon:      0.2
+          lambd:        0.99
+          num_epoch:    3
+          shared_critic:        False
+          learning_rate_schedule:       linear
+          beta_schedule:        linear
+          epsilon_schedule:     linear
+        checkpoint_interval:    500000
+        network_settings:
+          normalize:    False
+          hidden_units: 128
+          num_layers:   2
+          vis_encode_type:      simple
+          memory:       None
+          goal_conditioning_type:       hyper
+          deterministic:        False
+        reward_signals:
+          extrinsic:
+            gamma:      0.99
+            strength:   1.0
+            network_settings:
+              normalize:        False
+              hidden_units:     128
+              num_layers:       2
+              vis_encode_type:  simple
+              memory:   None
+              goal_conditioning_type:   hyper
+              deterministic:    False
+        init_path:      None
+        keep_checkpoints:       5
+        even_checkpoints:       False
+        max_steps:      5000000
+        time_horizon:   64
+        summary_freq:   10000
+        threaded:       False
+        self_play:
+          save_steps:   20000
+          team_change:  100000
+          swap_steps:   10000
+          window:       10
+          play_against_latest_model_ratio:      0.5
+          initial_elo:  1200.0
+        behavioral_cloning:     None
+[INFO] Parameter 'shaping_weight' is in lesson 'Phase1_RushTarget' and has value 'Float: value=1.0'.
+[INFO] Parameter 'exploration_weight' is in lesson 'Phase1_SpreadOut' and has value 'Float: value=1.0'.
+[INFO] CombatBot. Step: 10000. Time Elapsed: 80.493 s. Mean Reward: -19.062. Std of Reward: 5.424. Training. ELO: 1197.274.
+[INFO] CombatBot. Step: 20000. Time Elapsed: 129.772 s. Mean Reward: -22.371. Std of Reward: 10.324. Training. ELO: 1195.064.
+[INFO] CombatBot. Step: 30000. Time Elapsed: 178.519 s. Mean Reward: -14.635. Std of Reward: 4.508. Training. ELO: 1192.338.
+[INFO] CombatBot. Step: 40000. Time Elapsed: 228.375 s. Mean Reward: -9.305. Std of Reward: 4.201. Training. ELO: 1192.481.
+[INFO] CombatBot. Step: 50000. Time Elapsed: 277.336 s. Mean Reward: -7.838. Std of Reward: 1.565. Training. ELO: 1192.685.
+[INFO] CombatBot. Step: 60000. Time Elapsed: 325.912 s. Mean Reward: -1.659. Std of Reward: 6.978. Training. ELO: 1197.911.
+[INFO] CombatBot. Step: 70000. Time Elapsed: 376.002 s. Mean Reward: 0.764. Std of Reward: 4.399. Training. ELO: 1212.494.
+[INFO] CombatBot. Step: 80000. Time Elapsed: 424.990 s. Mean Reward: 2.082. Std of Reward: 5.810. Training. ELO: 1229.465.
+[INFO] CombatBot. Step: 90000. Time Elapsed: 473.667 s. Mean Reward: 1.428. Std of Reward: 4.698. Training. ELO: 1238.551.
+[INFO] CombatBot. Step: 100000. Time Elapsed: 522.536 s. Mean Reward: 0.435. Std of Reward: 5.253. Training. ELO: 1241.786.
+[INFO] CombatBot. Step: 110000. Time Elapsed: 573.467 s. Mean Reward: -4.631. Std of Reward: 2.652. Training. ELO: 1242.440.
+[INFO] CombatBot. Step: 120000. Time Elapsed: 624.688 s. Mean Reward: -3.899. Std of Reward: 2.378. Training. ELO: 1242.440.
+[INFO] CombatBot. Step: 130000. Time Elapsed: 672.548 s. Mean Reward: -4.370. Std of Reward: 2.262. Training. ELO: 1242.440.
+[INFO] CombatBot. Step: 140000. Time Elapsed: 723.657 s. Mean Reward: -4.786. Std of Reward: 4.027. Training. ELO: 1236.087.
+[INFO] CombatBot. Step: 150000. Time Elapsed: 772.174 s. Mean Reward: -5.325. Std of Reward: 4.815. Training. ELO: 1229.955.
+[INFO] CombatBot. Step: 160000. Time Elapsed: 821.591 s. Mean Reward: -5.311. Std of Reward: 3.753. Training. ELO: 1224.039.
+[INFO] CombatBot. Step: 170000. Time Elapsed: 871.040 s. Mean Reward: -2.029. Std of Reward: 1.748. Training. ELO: 1214.301.
+[INFO] CombatBot. Step: 180000. Time Elapsed: 919.714 s. Mean Reward: -2.280. Std of Reward: 1.868. Training. ELO: 1199.689.
+[INFO] CombatBot. Step: 190000. Time Elapsed: 968.668 s. Mean Reward: -8.330. Std of Reward: 5.109. Training. ELO: 1194.369.
+[INFO] CombatBot. Step: 200000. Time Elapsed: 1014.944 s. Mean Reward: -3.788. Std of Reward: 2.699. Training. ELO: 1192.875.
+[INFO] CombatBot. Step: 210000. Time Elapsed: 1064.945 s. Mean Reward: -6.961. Std of Reward: 4.571. Training. ELO: 1191.883.
+[INFO] CombatBot. Step: 220000. Time Elapsed: 1115.259 s. Mean Reward: -20.758. Std of Reward: 10.667. Training. ELO: 1191.883.
+[INFO] CombatBot. Step: 230000. Time Elapsed: 1165.751 s. Mean Reward: -18.543. Std of Reward: 9.131. Training. ELO: 1190.605.
+[INFO] CombatBot. Step: 240000. Time Elapsed: 1215.570 s. Mean Reward: -17.267. Std of Reward: 7.590. Training. ELO: 1188.272.
+[INFO] CombatBot. Step: 250000. Time Elapsed: 1266.184 s. Mean Reward: -5.396. Std of Reward: 2.777. Training. ELO: 1187.286.
+[INFO] CombatBot. Step: 260000. Time Elapsed: 1317.517 s. Mean Reward: -0.134. Std of Reward: 8.416. Training. ELO: 1186.624.
+[INFO] CombatBot. Step: 270000. Time Elapsed: 1364.192 s. Mean Reward: 5.593. Std of Reward: 7.444. Training. ELO: 1191.071.
+[INFO] CombatBot. Step: 280000. Time Elapsed: 1415.465 s. Mean Reward: 3.226. Std of Reward: 5.154. Training. ELO: 1195.442.
+[INFO] CombatBot. Step: 290000. Time Elapsed: 1466.387 s. Mean Reward: 2.510. Std of Reward: 5.605. Training. ELO: 1194.009.
+[INFO] CombatBot. Step: 300000. Time Elapsed: 1518.962 s. Mean Reward: 5.938. Std of Reward: 8.351. Training. ELO: 1194.644.
